@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Etcd.Modules", "Etcd.Module
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "etcetera", "..\..\..\..\Users\james.andrewsmith\Documents\GitHub\etcetera\etcetera\etcetera.csproj", "{6B923AD0-B102-4366-8321-79F8D1CA47FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Etcd.Modules.Tests", "Etcd.Modules.Tests\Etcd.Modules.Tests.csproj", "{7B856D39-DE07-45D3-B821-178943AE6DFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{6B923AD0-B102-4366-8321-79F8D1CA47FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B923AD0-B102-4366-8321-79F8D1CA47FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B923AD0-B102-4366-8321-79F8D1CA47FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B856D39-DE07-45D3-B821-178943AE6DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B856D39-DE07-45D3-B821-178943AE6DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B856D39-DE07-45D3-B821-178943AE6DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B856D39-DE07-45D3-B821-178943AE6DFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

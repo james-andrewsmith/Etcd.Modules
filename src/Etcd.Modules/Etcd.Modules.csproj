@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{62D48153-6553-47DA-96E5-8C8DDFD0437B}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Etcd.Modules</RootNamespace>
     <AssemblyName>Etcd.Modules</AssemblyName>
@@ -46,7 +46,6 @@
     <Compile Include="Configuration.cs" />
     <Compile Include="DistributedLock.cs" />
     <Compile Include="LeaderElection.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
