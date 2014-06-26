@@ -28,11 +28,11 @@ namespace Etcd.Modules
         #endregion
 
         #region // Properties //
-        private int _ttl;
+        private int _ttl;        
         private string _name;
         private CancellationTokenSource _source;
         private DistributedLock _lock;
-        public event Action OnLeaderShip;
+        public event Action OnLeaderShip;        
         #endregion
 
         /// <summary>
@@ -40,13 +40,12 @@ namespace Etcd.Modules
         /// </summary>
         public void Run()
         {
-            Task.Delay(1)
-                .ContinueWith(Campaign, _source.Token);            
+            Task.Factory.StartNew(Campaign, _source.Token);      
         }
 
-        private void Campaign(Task t)
+        private void Campaign()
         {
-            if (!t.IsCanceled)
+            if (!_source.IsCancellationRequested)
             {
                 try
                 {
@@ -58,8 +57,7 @@ namespace Etcd.Modules
                 catch (DistributedLockException)
                 {
                     // when we can't get the lock, just start again...
-                    Task.Delay(1)
-                        .ContinueWith(Campaign, _source.Token);
+                    Task.Factory.StartNew(Campaign, _source.Token);
                 }
             }
         }
